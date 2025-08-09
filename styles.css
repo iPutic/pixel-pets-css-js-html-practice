@@ -162,9 +162,33 @@ svg:hover {
 }
 
 .buy:hover {
-    background-color: rgb(255, 175, 25);
+    background-color: orange;
 }
 
 .learn-more:hover {
 background-color: rgb(255, 175, 25);
+}
+
+.undertext {
+    display: flex;
+    padding: 24px;
+    background: linear-gradient(to right, red, orange, yellow);
+    -webkit-background-clip: text; /* For WebKit browsers like Chrome, Safari */
+    background-clip: text;
+    color: transparent;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.content {
+    display: flex;
+    color: #52796F;
+    flex-wrap: wrap;
+}
+
+.box {
+    display: flex;
+    height: 600px;
+    flex: 1;
+    border: solid red;
 }
