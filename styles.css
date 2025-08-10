@@ -284,6 +284,7 @@ background-color: rgb(255, 175, 25);
     color: #ffff;
     max-width: 100%;
     position: relative;
+    min-height: 700px;
 }
 
 .box-wimg {
