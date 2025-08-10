@@ -43,14 +43,15 @@ ul {
     list-style: none;
 }
 
-.logo, 
-.logo a {
+.logo {
     display: flex;
+    margin: 12px;
+    margin-left: auto;
 }
 
 .nav-bar li{
     display: flex;
-    margin: 12px 16px;
+    margin: 12px;
     flex: 1;
     max-width: fit-content;
 }
@@ -59,22 +60,46 @@ ul {
     display: flex;
     background-color: #CAD2C5;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0;
-    padding: 0px 44px;
-    flex: content;
+    padding: 0;
     flex: 1;
     height: auto;
     max-height: 44px;
-    justify-content: center;
 }
 
-.nav-bar-links, footer ul {
+.nav-bar-links {
     display: flex;
     margin: 0;
     padding: 0;
     max-width: fit-content;
     flex: 1;
+}
+
+.right-links {
+    max-width: fit-content;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 0;
+    margin-right: auto;
+    padding: 0;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 12px;
+}
+
+.menu-toggle .bar {
+    display: flex;
+    background-color: black;
+    height: 3px;
+    width: 20px;
+    margin: 3px;
+    border-radius: 3px;
 }
 
 svg {
@@ -89,14 +114,6 @@ svg {
 
 svg:hover {
     fill: orange;
-}
-
-.right-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    padding: 0;
 }
 
 .hero {
@@ -148,7 +165,14 @@ p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 12px;
+}
+
+button{
+    display: flex;
+    max-width: 140px;
+    height: 72px;
+    aspect-ratio: 140 / 72;
+    border-radius: 40px;
 }
 
 .buy,
@@ -161,13 +185,11 @@ p {
 .buy {
     display: flex;
     border: 2px solid orange;
-    width: 140px;
-    height: 72px;
-    border-radius: 40px;
     justify-content: center;
     align-items: center;
     font-size: 16px;
     font-weight: 700;
+    flex: auto;
 }
 
 .learn-more {
@@ -194,6 +216,7 @@ background-color: rgb(255, 175, 25);
     background: linear-gradient(to right, red, orange, yellow);
     -webkit-background-clip: text; /* For WebKit browsers like Chrome, Safari */
     background-clip: text;
+    text-align: center;
     color: transparent;
     font-weight: 500;
     font-size: 24px;
@@ -221,6 +244,7 @@ background-color: rgb(255, 175, 25);
     align-items: center;
     background-color: #52796F;
     color: #ffff;
+    max-width: 100%;
 }
 
 .box-wimg {
@@ -238,16 +262,22 @@ img {
 }
 
 footer {
-    margin-top: 8px;
+    margin-top: 0px;
     display: flex;
     background-color: #354F52;
-    margin-bottom: -20px;
+    margin-bottom: 0px;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    flex-direction: column;
+    max-height: fit-content;
 }
 
 footer ul {
+display: flex;
 flex-wrap: wrap;
+justify-content: center;
+align-items: center;
 }
 
 footer a {
@@ -256,10 +286,61 @@ footer a {
     font-weight: 100;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
 }
 
 footer p {
     font-weight: 100;
     font-size: 24px ;
     color: #ffffff;
+}
+
+
+
+
+@media (max-width: 870px) {
+    .nav-bar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-bar {
+        padding: 0 12px;
+        justify-content: center;
+    }
+
+    .right-links {
+        margin: 0;
+        margin-left: auto
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 814px) {
+    .content {
+        margin: -4px 0 0 0;
+    }
+
+    .box, .box-wimg {
+        margin: 0;
+        margin-top: 12px;
+    }
+
+    .box, .box-wimg {
+    flex: 1 1 calc(51%);
+    }
 }
