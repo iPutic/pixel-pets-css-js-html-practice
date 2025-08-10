@@ -10,17 +10,19 @@ body {
     overflow-y: auto;
 }
 
-.nav-bar a {
+.nav-bar a,
+footer a {
     text-decoration: none;
     display: flex;
-    color: #4d4d4d;
+    color: #000000;
     font-size: 28px;
     font-weight: 100;
     flex: 1;
     transition: color 0.3s ease-in-out;
 }
 
-.nav-bar a:hover {
+.nav-bar a:hover
+{
     color: orange;
 }
 
@@ -36,6 +38,7 @@ ul {
 .nav-bar li {
     display: flex;
     padding: 24px 16px;
+    flex: 1;
 }
 
 .nav-bar {
@@ -110,6 +113,7 @@ h2 {
     color: #131313;
     margin: 0;
     padding: 12px;
+    text-align: center;
 }
 
 p {
@@ -119,6 +123,7 @@ p {
     font-weight: 600;
     font-size: 28px ;
     color: #1f1f1f;
+    text-align: center;
 }
 
 .buttons {
@@ -134,7 +139,7 @@ p {
     z-index: 2;
 }
 
-.hero a {
+a {
     padding: 12px;
 }
 
@@ -193,10 +198,13 @@ background-color: rgb(255, 175, 25);
 .box-wimg {
     display: flex;
     box-sizing: border-box;
-    height: 600px;
-    flex: 1 1 48%;
-    border: 1px solid red;
+    flex: 1 1 calc(48% - 12px);
     margin: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #52796F;
+    color: #ffff;
 }
 
 .box-wimg {
@@ -205,7 +213,23 @@ background-color: rgb(255, 175, 25);
     background-position: center center;
     background-repeat: no-repeat;
     position: relative;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    display: flex;
+}
+
+footer a {
+    color: #4d4d4d;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+footer a:hover {
+    color: #000000;
 }
