@@ -21,7 +21,8 @@ footer a {
     transition: color 0.3s ease-in-out;
 }
 
-.nav-bar a:hover
+.nav-bar a:hover,
+footer a:hover
 {
     color: orange;
 }
@@ -35,13 +36,15 @@ ul {
     list-style: none;
 }
 
-.nav-bar li {
+.nav-bar li,
+footer li {
     display: flex;
     padding: 24px 16px;
     flex: 1;
 }
 
-.nav-bar {
+.nav-bar, 
+footer {
     background-color: #CAD2C5;
     align-items: center;
     margin: 0;
@@ -51,7 +54,7 @@ ul {
     height: auto;
 }
 
-.nav-bar-links {
+.nav-bar-links, footer ul {
     display: flex;
     margin: 0;
     padding: 0;
@@ -74,7 +77,7 @@ svg:hover {
     fill: orange;
 }
 
-.right-links {
+.right-links, .footer-links {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -89,6 +92,7 @@ svg:hover {
     justify-content: space-evenly;
     background-color: #52796F;
     margin-bottom: 12px;
+    padding: 8px;
     flex: 1;
     position: relative;
 }
@@ -176,7 +180,7 @@ background-color: rgb(255, 175, 25);
 
 .undertext {
     display: flex;
-    padding: 24px;
+    padding: 8px;
     background: linear-gradient(to right, red, orange, yellow);
     -webkit-background-clip: text; /* For WebKit browsers like Chrome, Safari */
     background-clip: text;
@@ -186,19 +190,21 @@ background-color: rgb(255, 175, 25);
 }
 
 .content {
-    margin-top: -4px;
     display: flex;
     color: #52796F;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     position: relative;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: -4px;
 }
 
 .box, 
 .box-wimg {
     display: flex;
     box-sizing: border-box;
-    flex: 1 1 calc(48% - 12px);
+    flex: 1 1 calc(48%);
     margin: 8px;
     flex-direction: column;
     justify-content: center;
@@ -218,18 +224,33 @@ background-color: rgb(255, 175, 25);
 img {
     max-width: 100%;
     height: auto;
+    margin: 8px;
 }
 
 footer {
+    margin-top: 8px;
     display: flex;
+    background-color: #354F52;
+    margin-bottom: -20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer ul {
+flex-wrap: wrap;
 }
 
 footer a {
-    color: #4d4d4d;
+    color: #ffffff;
     font-size: 24px;
     font-weight: 100;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-footer a:hover {
-    color: #000000;
+footer p {
+    font-weight: 100;
+    font-size: 24px ;
+    color: #ffffff;
 }
+
