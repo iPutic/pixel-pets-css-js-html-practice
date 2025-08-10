@@ -126,6 +126,44 @@ svg:hover {
     padding: 8px;
     flex: 1;
     position: relative;
+    min-height: 845px;
+}
+
+.hero--second {
+    background-image: url(https://cdnb.artstation.com/p/assets/images/images/053/642/039/original/alberto-garcia-pixel-world-map.gif?1662670926);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 900px;
+    position: relative;
+    max-height: 900px;
+    justify-content: center;
+}
+
+.hero--second h2 {
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+}
+
+.hero--second .undertext {
+    position: absolute;
+    bottom: 0;
+}
+
+.hero--second p {
+    position: absolute;
+    bottom: 240px;
+    color: #ffffff;
+}
+
+.hero--second button,
+.box-wimg button{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    outline: none;
+    color: white;
 }
 
 .any-link {
@@ -254,6 +292,7 @@ background-color: rgb(255, 175, 25);
     background-position: center center;
     background-repeat: no-repeat;
     position: relative;
+    justify-content: flex-end;
 }
 
 img {
@@ -267,8 +306,6 @@ footer {
     display: flex;
     background-color: #354F52;
     margin-bottom: 0px;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
     max-height: fit-content;
@@ -277,7 +314,7 @@ footer {
 footer ul {
 display: flex;
 flex-wrap: wrap;
-justify-content: center;
+justify-content: space-around;
 align-items: center;
 }
 
@@ -306,6 +343,9 @@ footer li {
     margin: 4px 12px ;
 }
 
+.footer-links{
+    justify-content: center;
+}
 
 @media (max-width: 870px) {
     .nav-bar-links {
@@ -346,6 +386,14 @@ footer li {
     .box, .box-wimg {
         margin: 0;
         margin-top: 12px;
+    }
+
+    .box--one {
+        margin-top: 4px;
+    }
+
+    .box--last {
+        margin-bottom: 12px;
     }
 
     .box, .box-wimg {
