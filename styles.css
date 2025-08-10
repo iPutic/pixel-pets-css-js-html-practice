@@ -85,25 +85,25 @@ svg:hover {
     align-items: center;
     justify-content: space-evenly;
     background-color: #52796F;
-    margin-bottom: 32px;
+    margin-bottom: 12px;
     flex: 1;
     position: relative;
 }
 
-.hero-link {
+.any-link {
   position: absolute;
   inset: 0;
   z-index: 1;
 }
  
-.hero-text {
+.text {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
 }
 
-.hero-text h2 {
+h2 {
     display: flex;
     font-weight: 1000;
     font-size: 60px ;
@@ -112,7 +112,7 @@ svg:hover {
     padding: 12px;
 }
 
-.hero-text p {
+p {
     display: flex;
     margin: 0;
     padding: 8px;
@@ -128,8 +128,8 @@ svg:hover {
     padding: 12px;
 }
 
-.hero .buy,
-.hero .learn-more{
+.buy,
+.learn-more{
     position: relative;
     z-index: 2;
 }
@@ -181,14 +181,31 @@ background-color: rgb(255, 175, 25);
 }
 
 .content {
+    margin-top: -4px;
     display: flex;
     color: #52796F;
     flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
 }
 
-.box {
+.box, 
+.box-wimg {
     display: flex;
+    box-sizing: border-box;
     height: 600px;
-    flex: 1;
-    border: solid red;
+    flex: 1 1 48%;
+    border: 1px solid red;
+    margin: 8px;
+}
+
+.box-wimg {
+    background-image: url('assets/photos/pixel-art-illustration-mine-quarry-pixelated-tunnel-mine-quarry-tunnel-pixelated-game_1038602-1041.avif');
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
