@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     background-color: #84A98C;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .nav-bar a {
@@ -126,7 +127,7 @@ svg:hover {
     padding: 8px;
     flex: 1;
     position: relative;
-    min-height: 845px;
+    min-height: 60vh;
 }
 
 .hero--second {
@@ -222,22 +223,24 @@ button{
 .learn-more, 
 .buy {
     display: flex;
-    border: 2px solid orange;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    padding: 0.75em 1.5em; /* scales with font size */
+    min-width: 100px; /* prevents it from becoming unreadable */
+    border-radius: 40px;
+    font-size: 1rem;
     font-weight: 700;
-    flex: auto;
+    border: 2px solid orange;
+    transition: background-color 0.3s ease-in-out;
+    box-sizing: border-box;
 }
 
 .learn-more {
     background-color: orange;
-    transition: background-color 0.3s ease-in-out;
 }
 
 .buy {
     background-color: #52796F;
-    transition: background-color 0.3s ease-in-out;
 }
 
 .buy:hover {
@@ -377,10 +380,7 @@ footer li {
         margin: 0;
     }
 
-}
-
-@media (max-width: 814px) {
-    .content {
+        .content {
         margin: -4px 0 0 0;
     }
 
@@ -400,4 +400,5 @@ footer li {
     .box, .box-wimg {
     flex: 1 1 calc(51%);
     }
+
 }
