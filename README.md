@@ -1,69 +1,105 @@
-# PixelPet
+# **PixelPet**
 
-Welcome to **PixelPet** — my personal project playground for mastering modern front-end development, with a splash of backend magic on the horizon!  
-Right now, PixelPet is a lively, interactive landing page inspired by Apple.com’s sleek design — but with pixelated charm and personality all its own.
-
----
-
-## What Is PixelPet?
-
-PixelPet started as a fun exercise to clone Apple.com’s landing page layout and styling by hand, getting hands-on with:
-
-- Responsive design using **Flexbox** and CSS Grid  
-- **CSS animations and transitions** for smooth, eye-catching interactions  
-- Building UI components with **React** and managing state  
-- Modern JavaScript best practices learned through [JavaScript.info](https://javascript.info) and [The Odin Project](https://www.theodinproject.com)
+Welcome to **PixelPet** — my digital playground for leveling up in modern front-end and back-end development while building something fun, charming, and maybe even a little addictive. 🐾
 
 ---
 
-## What You’ll See Now
+## **What is PixelPet?**
 
-- A fully responsive landing page with neat navigation, clickable buttons, and animated hover states  
-- Smooth theme toggling between light and dark modes with animated transitions  
-- React components that make the UI modular and easy to update  
-- Clean, semantic HTML and accessible markup for usability
+PixelPet started as a clone of Apple.com’s landing page — a clean, responsive design challenge — but quickly evolved into its own world. Now, it’s the home base for a growing cast of pixel-perfect pets, and the testing ground for everything I’m learning along the way.
 
----
+**Core tech so far:**
 
-## What’s Coming Next?
-
-This project is a work in progress — here’s the roadmap for PixelPet’s upcoming features and learning milestones:
-
-- [ ] Add **backend functionality** with Node.js and Express to store and manage user data (think “create your own pixel pet”!)  
-- [ ] Expand React components with routing, forms, and dynamic data fetching  
-- [ ] Implement user authentication so players can save and personalize their pets  
-- [ ] Build features like pet collections, leveling up, and interactive environments  
-- [ ] Continue polishing the UI with more animations, accessibility improvements, and responsive tweaks
+* **HTML5 + CSS3**: Flexbox, CSS Grid, and responsive layouts
+* **CSS Magic**: Smooth animations, transitions, and theming
+* **JavaScript (ES6+)**: Dynamic UI interactions and clean modular code
+* **React**: Component-based design, state management, and reusable UI parts
+* **Accessibility & Performance**: Semantic HTML and optimized loading
 
 ---
 
-## Why PixelPet?
+## **Roadmap Timeline (Synced with 16-Week Learning Plan)**
 
-This project is my way of combining what I’ve learned in front-end development with practical backend skills — all while building something playful and potentially fun. It’s not just a project, it’s a journey, and PixelPet might someday become a real site!
+**Week 1** – ✅ Done
+
+* Build PixelPet landing page (HTML, CSS, Flexbox, Grid)
+* Clone Apple.com style but add pixel art charm
+* Deploy static version online
+
+**Week 2** – 🚧 In Progress
+
+* JavaScript basics: DOM, events, functions
+* Add interactive buttons & theme toggle
+* Small animations for navigation & pet teaser elements
+
+**Week 3–4** – ⏳ Planned
+
+* Intermediate JavaScript: arrays, objects, loops
+* Add light pet animation logic (hover, click interactions)
+* Integrate first small React component (header or card)
+
+**Week 5–6** – ⏳ Planned
+
+* React basics: components, props, state
+* Break landing page into React components
+* Prepare frontend for API data fetching
+
+**Week 7–8** – ⏳ Planned
+
+* Backend setup (Node.js + Express)
+* Create API routes for pets & user data
+* Store pet data in a database (PostgreSQL or MongoDB)
+
+**Week 9–10** – ⏳ Planned
+
+* User authentication (sign-up, login, logout)
+* Connect auth to pet ownership & profiles
+* Add "My Pets" dashboard page
+
+**Week 11–12** – ⏳ Planned
+
+* Pet Creator tool (upload image, choose traits)
+* Save pet to user profile
+* Basic leveling system for pets
+
+**Week 13–14** – ⏳ Planned
+
+* Pet Adventures (exploration, mini-games)
+* Leaderboards for pet stats
+
+**Week 15–16** – ⏳ Planned
+
+* Final UI/UX polish
+* Accessibility audit
+* Prepare PixelPet for public portfolio launch
+* Final deploy & GitHub README showcase
 
 ---
 
-## Getting Started
+## **Why PixelPet?**
 
-To get started with PixelPet:
-
-1. Clone this repository  
-2. Install dependencies (React and others when ready)  
-3. Run the development server  
-4. Start experimenting with UI, animations, and later backend integration!
+Because learning is more fun when you’re building something playful.
+PixelPet isn’t just a project — it’s my personal bootcamp for mastering full-stack web development while creating a product that could stand on its own one day.
 
 ---
 
-## Contribution
+## **Getting Started**
 
-This is a personal learning project, so contributions are welcome as suggestions or ideas. If you want to help, reach out!
-
----
-
-## License
-
-MIT License — feel free to use and adapt as you like.
+1. Clone the repo
+2. Install dependencies (`npm install`)
+3. Start the dev server (`npm run dev`)
+4. Explore the code, break things, fix them, repeat 🛠️
 
 ---
 
-Thanks for stopping by PixelPet! Let’s build some pixelated friends together. 🐾
+## **License**
+
+MIT License — use, remix, and share freely.
+
+---
+
+## **Let’s Build Pixelated Friends Together**
+
+Follow along as PixelPet grows from a landing page into a living, interactive pet playground.
+
+---
