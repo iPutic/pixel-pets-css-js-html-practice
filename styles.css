@@ -7,31 +7,31 @@
 }
 
 :root {
-  --color-bg: #FAF9F6;
+  --color-bg: #f7ffef;
   --color-bg-secondary: #CAD2C5;
 
   --color-text-body: #2F3E46;
-  --color-text-heading: #354F52;
+  --color-text-heading: #1e2c2e;
   --color-text-inverse: #FFFFFF;
 
   --color-primary: #84A98C;
-  --color-secondary: #52796F;
+  --color-secondary: #598378;
   --color-accent: #E07A5F;
   --color-highlight: #F4A261;
 }
 
 .dark {
-  --color-bg: #2F3E46;
-  --color-bg-secondary: #354F52;
+  --color-bg: #222826;
+  --color-bg-secondary: #2E3A36;
 
-  --color-text-body: #CAD2C5;
+  --color-text-body: #DDE5DF;
   --color-text-heading: #FFFFFF;
-  --color-text-inverse: #2F3E46;
+  --color-text-inverse: #9daca6;
 
-  --color-primary: #84A98C;
-  --color-secondary: #52796F;
-  --color-accent: #E07A5F;
-  --color-highlight: #F4A261;
+  --color-primary: #576e5f;
+  --color-secondary: #405851;
+  --color-accent: #E27D60;
+  --color-highlight: #F2A65A;
 }
 
 body {
@@ -39,7 +39,8 @@ body {
     font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
-    background-color: #84A98C;
+    background-color: var(--color-bg);
+    color: var(--color-text-body);
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -47,7 +48,7 @@ body {
 .nav-bar a {
     text-decoration: none;
     display: flex;
-    color: #000000;
+    color: var(--color-text-body);
     font-size: 16px;
     font-weight: 100;
     flex: 1;
@@ -59,7 +60,7 @@ body {
 .nav-bar a:hover,
 footer a:hover
 {
-    color: orange;
+    color: var(--color-highlight);
 }
 
 a {
@@ -87,7 +88,7 @@ ul {
 
 .nav-bar {
     display: flex;
-    background-color: #CAD2C5;
+    background-color: var(--color-bg-secondary);
     align-items: center;
     justify-content: space-around;
     margin: 0;
@@ -124,7 +125,7 @@ ul {
 
 .menu-toggle .bar {
     display: flex;
-    background-color: black;
+    background-color: var(--color-text-body);;
     height: 3px;
     width: 20px;
     margin: 3px;
@@ -137,12 +138,12 @@ svg {
     height: auto;
     padding: 0;
     margin:0;
-    fill: black;
+    fill: var(--color-text-body);
     transition: fill 0.3s ease-in-out;
 }
 
 svg:hover {
-    fill: orange;
+    fill: var(--color-highlight);
 }
 
 .hero {
@@ -150,7 +151,7 @@ svg:hover {
     flex-direction:column ;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #52796F;
+    background-color: var(--color-secondary);
     margin-bottom: 12px;
     padding: 8px;
     flex: 1;
@@ -212,7 +213,7 @@ h2 {
     display: flex;
     font-weight: 1000;
     font-size: 60px ;
-    color: #131313;
+    color: var(--color-text-heading);
     margin: 0;
     padding: 12px;
     text-align: center;
@@ -224,7 +225,7 @@ p {
     padding: 8px;
     font-weight: 600;
     font-size: 28px ;
-    color: #1f1f1f;
+    color: var(--color-text-body);
     text-align: center;
 }
 
@@ -240,6 +241,7 @@ button{
     height: 72px;
     aspect-ratio: 140 / 72;
     border-radius: 40px;
+    color: var(--color-text-inverse);
 }
 
 .buy,
@@ -258,25 +260,25 @@ button{
     border-radius: 40px;
     font-size: 1rem;
     font-weight: 700;
-    border: 2px solid orange;
+    border: 2px solid var(--color-highlight);
     transition: background-color 0.3s ease-in-out;
     box-sizing: border-box;
 }
 
 .learn-more {
-    background-color: orange;
+    background-color: var(--color-highlight);
 }
 
 .buy {
-    background-color: #52796F;
+    background-color: var(--color-secondary);
 }
 
 .buy:hover {
-    background-color: orange;
+    background-color: var(--color-highlight);
 }
 
 .learn-more:hover {
-background-color: rgb(255, 175, 25);
+    background-color: rgb(255, 175, 25);
 }
 
 .undertext {
@@ -293,7 +295,7 @@ background-color: rgb(255, 175, 25);
 
 .content {
     display: flex;
-    color: #52796F;
+    color: var(--color-secondary);
     flex-wrap: wrap;
     justify-content: space-evenly;
     position: relative;
@@ -311,8 +313,8 @@ background-color: rgb(255, 175, 25);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #52796F;
-    color: #ffff;
+    background-color: var(--color-secondary);
+    color: var(--color-text-inverse);
     max-width: 100%;
     position: relative;
     min-height: 700px;
@@ -336,13 +338,15 @@ img {
 footer {
     margin-top: 0px;
     display: flex;
-    background-color: #354F52;
+    background-color: var(--color-text-heading);
     margin-bottom: 0px;
     flex-wrap: wrap;
     flex-direction: column;
     max-height: fit-content;
 }
-
+.dark footer {
+    background-color: #111111;
+}
 footer ul {
 display: flex;
 flex-wrap: wrap;
@@ -351,7 +355,7 @@ align-items: center;
 }
 
 footer a {
-    color: #ffffff;
+    color: var(--color-text-inverse);
     font-size: 16px;
     font-weight: 100;
     justify-content: center;
@@ -363,7 +367,7 @@ footer a {
 footer p {
     font-weight: 100;
     font-size: 12px ;
-    color: #ffffff;
+    color: var(--color-text-inverse);
     padding: 0;
 }
 
