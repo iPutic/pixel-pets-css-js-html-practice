@@ -6,6 +6,34 @@
     box-sizing: border-box;
 }
 
+:root {
+  --color-bg: #FAF9F6;
+  --color-bg-secondary: #CAD2C5;
+
+  --color-text-body: #2F3E46;
+  --color-text-heading: #354F52;
+  --color-text-inverse: #FFFFFF;
+
+  --color-primary: #84A98C;
+  --color-secondary: #52796F;
+  --color-accent: #E07A5F;
+  --color-highlight: #F4A261;
+}
+
+.dark {
+  --color-bg: #2F3E46;
+  --color-bg-secondary: #354F52;
+
+  --color-text-body: #CAD2C5;
+  --color-text-heading: #FFFFFF;
+  --color-text-inverse: #2F3E46;
+
+  --color-primary: #84A98C;
+  --color-secondary: #52796F;
+  --color-accent: #E07A5F;
+  --color-highlight: #F4A261;
+}
+
 body {
     overflow: hidden;
     font-family: Roboto, sans-serif;
@@ -225,8 +253,8 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.75em 1.5em; /* scales with font size */
-    min-width: 100px; /* prevents it from becoming unreadable */
+    padding: 0.75em 1.5em;
+    min-width: 100px;
     border-radius: 40px;
     font-size: 1rem;
     font-weight: 700;
