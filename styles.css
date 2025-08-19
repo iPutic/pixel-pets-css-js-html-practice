@@ -7,31 +7,31 @@
 }
 
 :root {
-  --color-bg: #f7ffef;
-  --color-bg-secondary: #CAD2C5;
+  --color-bg: #CAD2C5;
+  --color-bg-secondary: #FFFFFF;
 
   --color-text-body: #2F3E46;
-  --color-text-heading: #1e2c2e;
+  --color-text-heading: #354F52;
   --color-text-inverse: #FFFFFF;
 
   --color-primary: #84A98C;
-  --color-secondary: #598378;
+  --color-secondary: #52796F;
   --color-accent: #E07A5F;
   --color-highlight: #F4A261;
 }
 
 .dark {
-  --color-bg: #222826;
-  --color-bg-secondary: #2E3A36;
+  --color-bg: #2F3E46;
+  --color-bg-secondary: #354F52;
 
-  --color-text-body: #DDE5DF;
-  --color-text-heading: #FFFFFF;
-  --color-text-inverse: #9daca6;
+  --color-text-body: #F0F0F0;
+  --color-text-heading: #e9ece7;
+  --color-text-inverse: #FFFFFF;
 
-  --color-primary: #576e5f;
-  --color-secondary: #405851;
-  --color-accent: #E27D60;
-  --color-highlight: #F2A65A;
+  --color-primary: #84A98C;
+  --color-secondary: #52796F;
+  --color-accent: #E07A5F;
+  --color-highlight: #F4A261;
 }
 
 body {
@@ -155,6 +155,7 @@ svg:hover {
     background-color: var(--color-secondary);
     margin-bottom: 16px;
     flex: 1;
+    padding: 16px;
     position: relative;
     min-height: 60vh;
 }
@@ -173,14 +174,15 @@ svg:hover {
 .hero--second h2 {
     color: #ffffff;
     position: absolute;
-    top: 0;
+    top: 16px;
     white-space: normal;
     word-wrap: break-word;
+    display: flex;
 }
 
 .hero--second .undertext {
     position: absolute;
-    bottom: 0;
+    bottom: -4px;
 }
 
 .hero--second p {
@@ -288,7 +290,7 @@ button{
     display: flex;
     margin-bottom: 16px;
     background: linear-gradient(to right, red, orange, yellow);
-    -webkit-background-clip: text; /* For WebKit browsers like Chrome, Safari */
+    -webkit-background-clip: text;
     background-clip: text;
     text-align: center;
     color: transparent;
@@ -342,9 +344,8 @@ footer {
     display: flex;
     background-color: var(--color-text-heading);
     margin-bottom: 0px;
-    flex-wrap: wrap;
-    flex-direction: column;
     max-height: fit-content;
+    justify-content: center;
 }
 .dark footer {
     background-color: #111111;
