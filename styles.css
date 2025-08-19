@@ -373,7 +373,6 @@ footer a {
     color: var(--color-text-inverse);
     font-size: 12px;
     font-weight: 100;
-    justify-content: center;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
@@ -409,6 +408,23 @@ footer li {
 }
 
 @media (max-width: 870px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-center {        
+        position: relative;
+        transform: none;
+        left: 0;
+    }
+
+    .footer-links {
+        justify-content: center;
+        align-items: center;
+    }
+
     .nav-bar-links {
         display: none;
         flex-direction: column;
