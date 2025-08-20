@@ -42,3 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
         applyTheme(current === 'light' ? 'dark' : 'light');
     });
 });
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-bar-links");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+    menuToggle.classList.toggle("active");
+});
