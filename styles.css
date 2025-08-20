@@ -35,6 +35,7 @@
 }
 
 body {
+    transition: background-color 0.6s ease, color 0.6s ease;
     overflow: hidden;
     font-family: Roboto, sans-serif;
     display: flex;
@@ -52,7 +53,7 @@ body {
     font-size: 16px;
     font-weight: 100;
     flex: 1;
-     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
     padding: 0;
     max-width: fit-content;
 }
@@ -117,6 +118,16 @@ ul {
     padding: 0;
 }
 
+#theme-sun, #theme-moon {
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#theme-sun.show, #theme-moon.show {
+    opacity: 1;
+}
+
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -151,14 +162,58 @@ svg:hover {
     display: flex;
     flex-direction:column ;
     align-items: center;
-    justify-content: space-evenly;
-    background-color: var(--color-secondary);
+    justify-content: space-around;
     margin-bottom: 16px;
     flex: 1;
     padding: 16px;
     position: relative;
-    min-height: 60vh;
+    min-height: 90vh;
 }
+
+.hero--first {
+    background: url("assets/photos/pixelated-meadow-with-clouds-jpg-ix1amwb0izf0c5zw.jpg") no-repeat center/cover;
+    width: 100%;
+}
+
+.dark .hero--first h2 {
+    color: #354F52
+}
+
+.dark .hero--first p {
+    color: #2F3E46;
+}
+
+.hero-pet-mascot {
+    width: 150px;
+    height: auto;
+    animation: float 3s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.undertext {
+    display: flex;
+    margin-bottom: 16px;
+    background: linear-gradient(to right, red, orange, yellow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    color: transparent;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.hero--first .undertext {
+    background: linear-gradient(to right,rgb(0, 50, 100),rgb(0, 47, 200),rgb(211, 8, 8));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
 
 .hero--second {
     background-image: url(https://cdnb.artstation.com/p/assets/images/images/053/642/039/original/alberto-garcia-pixel-world-map.gif?1662670926);
@@ -286,18 +341,6 @@ button{
     background-color: rgb(255, 175, 25);
 }
 
-.undertext {
-    display: flex;
-    margin-bottom: 16px;
-    background: linear-gradient(to right, red, orange, yellow);
-    -webkit-background-clip: text;
-    background-clip: text;
-    text-align: center;
-    color: transparent;
-    font-weight: 500;
-    font-size: 24px;
-}
-
 .content {
     display: flex;
     color: var(--color-secondary);
@@ -412,7 +455,7 @@ footer li {
     justify-content: center;
 }
 
-@media (max-width: 870px) {
+@media (max-width: 768px) {
     footer {
         flex-direction: column;
         justify-content: center;
