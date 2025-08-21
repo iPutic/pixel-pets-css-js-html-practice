@@ -8,6 +8,7 @@
 
 html {
     overflow-y: scroll;
+    max-height: 100vh;
 }
 
 :root {
@@ -44,9 +45,8 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--color-bg);
-    color: var(--color-text-body);
-    overflow-y: scroll;
-    overflow-x: hidden;
+    color: var(--color-text-body);  
+    max-height: 100vh;
 }
 
 .nav-bar a {
@@ -568,12 +568,18 @@ footer li {
     background-color: #F4A261; 
 } 
 
-html {
-    overflow-y: scroll;
+html, body {
+  overflow-y: auto;
+  max-height: none;
 }
 
-body {
-    overflow-y: hidden;
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 }
