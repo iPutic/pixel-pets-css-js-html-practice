@@ -47,6 +47,7 @@ body {
     background-color: var(--color-bg);
     color: var(--color-text-body);  
     max-height: 100vh;
+    padding-top: 44px;
 }
 
 .nav-bar a {
@@ -101,6 +102,11 @@ ul {
     flex: 1;
     height: auto;
     max-height: 44px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 .nav-bar-links {
@@ -476,18 +482,10 @@ footer li {
         align-items: center;
     }
 
-    .nav-bar-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-    }
-
     .menu-toggle {
         display: flex;
         justify-content: center;
+        z-index: 1100; 
     }
 
     .nav-bar {
@@ -526,33 +524,41 @@ footer li {
     flex: 1 1 calc(51%);
     }
 
-    .nav-bar-links {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .nav-bar-links {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background: #111;
-    font-size: 2rem;
-    gap: 2rem;
-    z-index: 999;
-    transition: all 0.3s ease-in-out;
-    clip-path: inset(0 0 100% 0); 
-}
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+    flex: none !important;
+
+    z-index: 900;
+  }
 
 .nav-bar-links li {
     justify-content: center;
     align-items: center;
 }
 
-.nav-bar-links.open {
-    display: flex;
-    clip-path: inset(0 0 0 0); 
-}
+  .nav-bar-links.open {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 999;
+  }
 
 .menu-toggle span {
     display: block;
@@ -562,11 +568,15 @@ footer li {
     margin: 1px;
     background: var(--color-text-body);
     transition: all 0.3s ease;
+    position: relative;
+  z-index: 1100;
 }
 
 .menu-toggle.active span{
     background-color: #F4A261; 
-} 
+    position: relative;
+  z-index: 1100;
+}
 
 html, body {
   overflow-y: auto;

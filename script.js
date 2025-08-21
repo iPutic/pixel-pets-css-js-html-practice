@@ -49,4 +49,10 @@ const navLinks = document.querySelector(".nav-bar-links");
 menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("open");
     menuToggle.classList.toggle("active");
+
+    if (navLinks.classList.contains("open")) {
+        document.body.style.overflow = "hidden";
+    } else {
+        document.body.style.overflow = "";
+    }
 });
